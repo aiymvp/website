@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 - Table and Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Table and Feedback Form</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+    </nav>
+
+    <main>
+        <h2>Student Grades</h2>
+        <table class="grades-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Group</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aigerim</td>
+                    <td>MT-2401</td>
+                    <td>Cinematography</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Dias</td>
+                    <td>MT-2402</td>
+                    <td>Screenwriting</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Aiym</td>
+                    <td>MT-2406</td>
+                    <td>WEB Technologies</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Anuar</td>
+                    <td>MT-2403</td>
+                    <td>PE</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Feedback Form</h2>
+        <form class="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Do you like this page?</label>
+            <input type="radio" id="yes" name="like" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="like" value="no">
+            <label for="no">No</label>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>Created by Aiym © 2025</p>
+    </footer>
+</body>
+</html>
